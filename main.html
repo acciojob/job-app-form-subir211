@@ -11,25 +11,37 @@
     <script type="text/javascript" src="./script.js">
 </script>
 <title>Job application Form</title>
-	<label for="Name">name</label>
+	<form method="POST">
+	<label for="Name">Name</label>
 	<input type="text" id="name" required>
 
-	<label for="Email">email</label>
-	<input type="text" id="email" required>
+	<label for="email">Email</label>
+	<input type="email" id="email" required>
 	
-	<label for="gender_m">male</label>
-	<input type="radio" id="gender" name="gender" value="men" required>
-	
-  <label for="gender_f">female</label>
-<input type="radio" id="gender" name="gender" value="female" required>
+	<label>Gender:</label>
+  <input type="radio" name="gender" value="male" required> Male
+  <input type="radio" name="gender" value="female" required> Female
 
-	<label for="laptop">laptop Brands</label>
+	<label for="laptop">laptop Brands:</label>
+	<select id="laptop">
 	<option value="dell">dell</option>
 	<option value="Asus">asus</option>
 	<option value="hp">hp</option>
-	
-	
-	
+	</select>
+		
+	<label for="age">Age</label>
+		<input type="number" id="age" required>
+		
+		<label for="dob">date of birth:</label>
+		<input type="date" id="dob"  required>
+		
+		<label for="password">password:</label>
+		<input type="password" id="password" required>
+		
+		<label for="portfolio">portfolio URL:</label>
+		<input type="url" id="portfolio">
+		
+		 <button type="submit">Submit</button>
+	</form>
 </body>
-
 </html>
